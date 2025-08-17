@@ -8,33 +8,33 @@ In this project, we used the Mall Customers dataset to segment customers based o
 
 **2. Approach**
 
-The project followed a structured workflow:
-
-Data Loading and Cleaning:
+**Data Loading and Cleaning:**
 
 The dataset was loaded from a CSV file containing 200 customer records.
 
-Features: CustomerID, Gender, Age, Annual Income (k$), and Spending Score (1-100).
+**Features:**
+
+CustomerID, Gender, Age, Annual Income (k$), and Spending Score (1-100).
 
 Non-numerical features (e.g., Gender) were not used in clustering to avoid bias.
 
-Exploratory Data Analysis (EDA):
+**Exploratory Data Analysis (EDA):**
 
 Distribution of gender, age, annual income, and spending score was visualized.
 
 Found a balanced gender split, diverse age groups, and wide variation in income/spending patterns.
 
-Feature Scaling:
+**Feature Scaling:**
 
 StandardScaler was applied to normalize numerical features (Age, Annual Income, and Spending Score) for better clustering performance.
 
-Clustering Algorithms:
+**Clustering Algorithms:**
 
 K-Means Clustering: Tested for different cluster values (k=2 to 10). Silhouette score was used to determine the best fit.
 
 Hierarchical Clustering: Applied with different linkage methods (ward, complete, average, single). A dendrogram was generated to visualize natural divisions in the data.
 
-Cluster Visualization:
+**Cluster Visualization:**
 
 2D scatter plots (Income vs. Spending Score) were created for both clustering methods.
 
@@ -71,3 +71,4 @@ Guides strategic decisions for product placement, promotions, and personalized o
 **5. Conclusion**
 
 This project demonstrated the effectiveness of unsupervised learning techniques (K-Means and Hierarchical Clustering) in segmenting mall customers into meaningful groups. Despite challenges in parameter tuning and algorithm compatibility, the final models provided clear and actionable insights that businesses can leverage to optimize customer engagement and profitability.
+
